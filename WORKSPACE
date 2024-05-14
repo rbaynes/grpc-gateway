@@ -1,4 +1,4 @@
-workspace(name = "grpc_ecosystem_grpc_gateway")
+workspace(name = "rbaynes_grpc_gateway")
 
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")

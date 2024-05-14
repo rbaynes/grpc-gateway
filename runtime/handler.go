@@ -166,10 +166,12 @@ func ForwardResponseMessage(ctx context.Context, mux *ServeMux, marshaler Marsha
 	}
 	var buf []byte
 	var err error
+	grpclog.Infof("debugrob runtime ForwardResponseMessage")
 	if rb, ok := resp.(responseBody); ok {
 		buf, err = marshaler.Marshal(rb.XXX_ResponseBody())
 	} else {
 		buf, err = marshaler.Marshal(resp)
+		grpclog.Infof("debugrob runtime ForwardResponseMessage resp=%+v buf=%+v", resp, buf)
 	}
 	if err != nil {
 		grpclog.Infof("Marshal error: %v", err)
