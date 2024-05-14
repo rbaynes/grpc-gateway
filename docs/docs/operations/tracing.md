@@ -165,7 +165,7 @@ the services. E.g.
 ```go
 import (
 	"google.golang.org/grpc"
-	"github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
+	"github.com/rbaynes/go-grpc-middleware/tracing/opentracing"
 )
 
 opts := []grpc.DialOption{

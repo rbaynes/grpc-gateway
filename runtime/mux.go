@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/httprule"
+	"github.com/rbaynes/grpc-gateway/v2/internal/httprule"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/grpc/health/grpc_health_v1"
@@ -228,7 +228,7 @@ func WithDisablePathLengthFallback() ServeMuxOption {
 // When called the handler will forward the request to the upstream grpc service health check (defined in the
 // gRPC Health Checking Protocol).
 //
-// See here https://grpc-ecosystem.github.io/grpc-gateway/docs/operations/health_check/ for more information on how
+// See here https://rbaynes.github.io/grpc-gateway/docs/operations/health_check/ for more information on how
 // to setup the protocol in the grpc server.
 //
 // If you define a service as query parameter, this will also be forwarded as service in the HealthCheckRequest.
@@ -309,7 +309,7 @@ func (s *ServeMux) Handle(meth string, pat Pattern, h HandlerFunc) {
 }
 
 // HandlePath allows users to configure custom path handlers.
-// refer: https://grpc-ecosystem.github.io/grpc-gateway/docs/operations/inject_router/
+// refer: https://rbaynes.github.io/grpc-gateway/docs/operations/inject_router/
 func (s *ServeMux) HandlePath(meth string, pathPattern string, h HandlerFunc) error {
 	compiler, err := httprule.Parse(pathPattern)
 	if err != nil {

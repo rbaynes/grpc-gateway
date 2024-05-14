@@ -380,19 +380,19 @@ def go_repositories():
     )
     go_repository(
         name = "com_github_grpc_ecosystem_go_grpc_middleware",
-        importpath = "github.com/grpc-ecosystem/go-grpc-middleware",
+        importpath = "github.com/rbaynes/go-grpc-middleware",
         sum = "h1:Iju5GlWwrvL6UBg4zJJt3btmonfrMlCDdsejg4CZE7c=",
         version = "v1.0.0",
     )
     go_repository(
         name = "com_github_grpc_ecosystem_go_grpc_prometheus",
-        importpath = "github.com/grpc-ecosystem/go-grpc-prometheus",
+        importpath = "github.com/rbaynes/go-grpc-prometheus",
         sum = "h1:Ovs26xHkKqVztRpIrF/92BcuyuQ/YW4NSIpoGtfXNho=",
         version = "v1.2.0",
     )
     go_repository(
         name = "com_github_grpc_ecosystem_grpc_gateway",
-        importpath = "github.com/grpc-ecosystem/grpc-gateway",
+        importpath = "github.com/rbaynes/grpc-gateway",
         sum = "h1:gmcG1KaJ57LophUzW0Hy8NmPhnMZb4M0+kPpLofRdBo=",
         version = "v1.16.0",
     )
